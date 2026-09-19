@@ -14,7 +14,7 @@ export function Hero() {
           Bonjour, je m'appelle
         </p>
 
-        <h1 className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-6xl font-extrabold tracking-tight text-transparent sm:text-7xl">
+        <h1 className="whitespace-nowrap bg-gradient-to-r from-primary to-secondary bg-clip-text text-[clamp(1.75rem,7vw,3.5rem)] font-extrabold tracking-tight text-transparent">
           {profile.name}
         </h1>
 
