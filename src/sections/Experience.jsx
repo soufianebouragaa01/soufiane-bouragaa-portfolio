@@ -1,3 +1,4 @@
+import { ExternalLink } from 'lucide-react'
 import { Reveal } from '../components/Reveal'
 import { Timeline } from '../components/Timeline'
 import { SectionTitle } from '../components/SectionTitle'
@@ -46,12 +47,26 @@ export function Experience() {
         </h3>
         <ul className="grid gap-3 sm:grid-cols-2">
           {profile.certifications.map((cert) => (
-            <li
-              key={cert.title}
-              className="rounded-lg border border-border bg-surface px-4 py-3 text-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:shadow-md"
-            >
-              <p className="font-medium text-foreground">{cert.title}</p>
-              <p className="text-muted-foreground">{cert.issuer}</p>
+            <li key={cert.title}>
+              <a
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex h-full items-start justify-between gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm transition-all duration-200 hover:-translate-y-1 hover:border-primary/30 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                <span>
+                  <span className="block font-medium text-foreground">{cert.title}</span>
+                  <span className="block text-muted-foreground">
+                    {cert.issuer}
+                    {cert.date ? ` · ${cert.date}` : ''}
+                  </span>
+                </span>
+                <ExternalLink
+                  size={14}
+                  className="mt-1 shrink-0 text-muted-foreground transition-colors group-hover:text-primary"
+                />
+                <span className="sr-only">(ouvre dans un nouvel onglet)</span>
+              </a>
             </li>
           ))}
         </ul>
