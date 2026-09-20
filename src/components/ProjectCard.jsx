@@ -1,4 +1,4 @@
-import { ArrowRight, Cloud, Database } from 'lucide-react'
+import { ArrowRight, Cloud, Code2, Database } from 'lucide-react'
 import { Badge } from './Badge'
 import { Button } from './Button'
 
@@ -14,6 +14,12 @@ const DOMAIN_STYLES = {
     gradient: 'from-secondary/20 via-secondary/10 to-transparent',
     iconColor: 'text-secondary',
     badgeVariant: 'secondary',
+  },
+  dev: {
+    icon: Code2,
+    gradient: 'from-accent/20 via-accent/10 to-transparent',
+    iconColor: 'text-accent',
+    badgeVariant: 'accent',
   },
 }
 
