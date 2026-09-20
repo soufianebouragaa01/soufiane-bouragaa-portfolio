@@ -31,7 +31,7 @@ export const salesforceSkills = {
     items: [
       'Salesforce CLI (SFDX)',
       'Environnements Sandbox / UAT / Production',
-      'Trailhead — 20 badges, rang Adventurer',
+      'Trailhead — 75 badges, rang Adventurer',
       'Méthodologie Agile / Scrum',
     ],
   },

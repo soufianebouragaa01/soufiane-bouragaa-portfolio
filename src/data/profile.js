@@ -35,12 +35,16 @@ export const profile = {
     { title: 'Introduction to NoSQL Databases', issuer: 'IBM (Coursera)' },
     { title: 'Formation et Badges Salesforce', issuer: 'Salesforce Trailhead' },
     { title: 'Introduction to Cloud Computing', issuer: 'IBM (Coursera)' },
+    { title: 'Introduction to Big Data', issuer: 'Coursera' },
+    { title: 'HTML, CSS & JavaScript', issuer: 'Coursera' },
+    { title: 'Cisco Networking', issuer: 'Coursera' },
+    { title: 'Conception', issuer: 'Coursera' },
   ],
 
   trailhead: {
     profileUrl: 'https://www.salesforce.com/trailblazer/yhpgmg1amfnmnfo8tx',
-    badges: 20,
-    points: 34475,
+    badges: 75,
+    points: 934475,
     rank: 'Adventurer',
   },
 
