@@ -1,4 +1,4 @@
-import { Cloud, Database } from 'lucide-react'
+import { ArrowRight, Cloud, Database } from 'lucide-react'
 import { Badge } from './Badge'
 import { Button } from './Button'
 
@@ -59,6 +59,7 @@ export function ProjectCard({ project, onOpenCaseStudy }) {
           className="mt-2"
         >
           Voir le Case Study
+          <ArrowRight size={14} />
         </Button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Cloud, Database } from 'lucide-react'
+import { ArrowRight, Cloud, Database, Download, Mail } from 'lucide-react'
 import portrait from '../assets/soufiane-portrait.jpg'
 import { Badge } from '../components/Badge'
 import { Button } from '../components/Button'
@@ -25,11 +25,14 @@ export function Hero() {
         <div className="flex flex-wrap justify-center gap-3 md:justify-start">
           <Button as="a" href="#projects" variant="primary">
             Voir mes projets
+            <ArrowRight size={16} />
           </Button>
           <Button as="a" href="/cv.pdf" download variant="outline">
+            <Download size={16} />
             Télécharger mon CV
           </Button>
           <Button as="a" href="#contact" variant="ghost">
+            <Mail size={16} />
             Me contacter
           </Button>
         </div>

@@ -1,4 +1,4 @@
-import { Code2, Database, Settings2, Workflow } from 'lucide-react'
+import { Code2, Database, ExternalLink, Settings2, Workflow } from 'lucide-react'
 import { Button } from '../components/Button'
 import { Reveal } from '../components/Reveal'
 import { SectionTitle } from '../components/SectionTitle'
@@ -45,6 +45,7 @@ export function Salesforce() {
           </div>
           <Button as="a" href={profile.trailhead.profileUrl} target="_blank" variant="outline" size="sm">
             Voir mon profil Trailhead
+            <ExternalLink size={14} />
           </Button>
         </div>
       </Reveal>

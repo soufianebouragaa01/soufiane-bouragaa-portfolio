@@ -1,4 +1,4 @@
-import { Briefcase, Code2, Mail, MapPin, Phone } from 'lucide-react'
+import { Briefcase, Code2, Mail, MapPin, Phone, Send } from 'lucide-react'
 import { useState } from 'react'
 import { Button } from '../components/Button'
 import { Reveal } from '../components/Reveal'
@@ -165,6 +165,7 @@ export function Contact() {
 
             <Button type="submit" variant="primary" disabled={status === 'sending'}>
               {status === 'sending' ? 'Envoi en cours…' : 'Envoyer le message'}
+              {status !== 'sending' && <Send size={16} />}
             </Button>
 
             {status === 'success' && (

@@ -9,7 +9,7 @@ const LINKS = [
 
 export function SocialSidebar() {
   return (
-    <div className="fixed bottom-0 left-6 z-40 hidden flex-col items-center gap-6 lg:flex">
+    <div className="fixed bottom-0 left-6 z-40 hidden flex-col items-center gap-6 xl:flex">
       <ul className="flex flex-col items-center gap-4">
         {LINKS.map(({ icon: Icon, label, href }) => (
           <li key={label}>

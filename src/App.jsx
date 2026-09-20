@@ -1,4 +1,6 @@
+import { BackToTop } from './components/BackToTop'
 import { CustomCursor } from './components/CustomCursor'
+import { Footer } from './components/Footer'
 import { Navbar } from './components/Navbar'
 import { SocialSidebar } from './components/SocialSidebar'
 import { About } from './sections/About'
@@ -33,6 +35,9 @@ function App() {
         <Experience />
         <Contact />
       </main>
+
+      <Footer />
+      <BackToTop />
     </>
   )
 }

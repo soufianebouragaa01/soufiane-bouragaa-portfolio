@@ -1,18 +1,9 @@
-import { Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import portrait from '../assets/soufiane-portrait.jpg'
+import { navLinks as LINKS } from '../data/navigation'
 import { Button } from './Button'
 import { ThemeToggle } from './ThemeToggle'
-
-const LINKS = [
-  { id: 'hero', label: 'Accueil' },
-  { id: 'about', label: 'À propos' },
-  { id: 'salesforce', label: 'Salesforce' },
-  { id: 'data', label: 'Data' },
-  { id: 'projects', label: 'Projets' },
-  { id: 'experience', label: 'Expérience' },
-  { id: 'contact', label: 'Contact' },
-]
 
 export function Navbar() {
   const [open, setOpen] = useState(false)
@@ -44,6 +35,7 @@ export function Navbar() {
         <div className="hidden items-center gap-3 md:flex">
           <ThemeToggle />
           <Button as="a" href="/cv.pdf" download size="sm">
+            <Download size={14} />
             CV
           </Button>
         </div>
@@ -75,6 +67,7 @@ export function Navbar() {
             </a>
           ))}
           <Button as="a" href="/cv.pdf" download size="sm" className="mt-2 justify-center">
+            <Download size={14} />
             Télécharger mon CV
           </Button>
         </nav>
