@@ -85,7 +85,7 @@ export const projects = [
   {
     slug: 'detection-maladies-plantes',
     name: 'Détection Automatique de Maladies des Plantes',
-    company: 'PFA (Projet de Fin d’Année)',
+    company: 'PFA (Projet de Fin d’Année, 2026)',
     domain: 'data',
     featured: true,
     businessProblem:
@@ -132,7 +132,7 @@ export const projects = [
   {
     slug: 'estimation-vehicules-ml',
     name: 'Estimation de Véhicules avec IA',
-    company: 'PFA (Projet de Fin d’Année)',
+    company: 'PFA (Projet de Fin d’Année, 2025)',
     domain: 'data',
     featured: false,
     businessProblem:
